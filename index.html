@@ -69,12 +69,14 @@
 }).addTo(map);
 
 $.getJSON(“gsurvey_-_assign.7 (1).geojson”,function(data){L.geoJson(data, {
-	pointTolayer: function(feature, latlng) {
-		L.CircleMarker(latlng,
+	pointToLayer: function(feature, 42.042805, -87.678975) {
+		'return new' L.CircleMarker(42.042805, -87.678975,
 			{ 	radius: 5,
 				fillOpacity: 1
-				fillColor: pink});
+				fillColor: 'pink'});
+		}
 	}).addTo(map);
+});
 
 
 
