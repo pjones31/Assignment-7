@@ -70,7 +70,7 @@
 
 $.getJSON(“gsurvey_-_assign.7 (1).geojson”,function(data){L.geoJson(data, {
 	pointTolayer: function(feature, latlng) {
-		return new L.CircleMarker(latlng,
+		L.CircleMarker(latlng,
 			{ 	radius: 5,
 				fillOpacity: 1
 				fillColor: pink});
